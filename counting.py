@@ -9,6 +9,7 @@ else:
         string = s*n
         print(string[:n].count("a"))
     else:
-        a = n/len(s)
-        print(math.ceil(a*s.count("a")))
+        print(int(n/len(s))*s.count("a")+s[:n%len(s)].count("a"))
+
+
 
