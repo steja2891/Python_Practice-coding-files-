@@ -1,8 +1,9 @@
 class Person:
-    def __init__(self,initialAge):
+    def __init__(self, initialAge):
         # Add some more code to run some checks on initialAge
         self.set_age(initialAge)
-    def set_age(self,intialAge):
+
+    def set_age(self, intialAge):
         if intialAge < 0:
             self.age = 0
             print("Age is not valid, setting age at 0")
@@ -13,10 +14,11 @@ class Person:
         # Do some computations in here and print out the correct statement to the console
         if self.age < 13:
             print("You are young.")
-        elif age in range(13,18):
+        elif age in range(13, 18):
             print("You are a teenager.")
         else:
             print("You are old.")
+
     def yearPasses(self):
         # Increment the age of the person in here
         self.age += 1
